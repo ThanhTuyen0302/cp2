@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #87CEFA; /* Nền màu xanh nhạt dịu */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Thẻ bao ngoài nội dung */
+.container {
+    width: 350px; /* Kích thước chuẩn */
+    text-align: center;
+}
+
+/* Card chính giữa */
+.card {
+    background-color: #ffffff; /* Nền trắng */
+    border-radius: 15px; /* Bo tròn góc */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+    padding: 30px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Input nhập tên thành phố */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #007BFF;
+}
+
+/* Nút chung */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Nút lấy thời tiết theo tên thành phố */
+button.btn-primary {
+    background-color: #007BFF; /* Màu xanh dương */
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Nút lấy vị trí thiết bị */
+button.btn-success {
+    background-color: #28A745; /* Màu xanh lá */
+}
+
+button.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* Dòng chia cách "OR" */
+.divider {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Thông tin thời tiết */
+#weatherInfo {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333333;
+}
